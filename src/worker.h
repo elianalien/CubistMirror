@@ -39,7 +39,7 @@ public:
         string path = PATH;
         string ld_library_path = LD_LIBRARY_PATH;
         cmd_path = "export PATH="+path+"; export LD_LIBRARY_PATH="+ld_library_path+";";
-        cmd_chainer = "/usr/local/bin/python "+neuralStylePath+"/generate.py "+ofToDataPath("cam_"+ofToString(index)+".png")+" -m "+model+" -o "+ofToDataPath("chainer_img_"+ofToString(index)+".png")+" --gpu "+(GPU_ENABLED==1?"0":"-1");
+        cmd_chainer = "/usr/bin/python3 "+neuralStylePath+"/generate.py "+ofToDataPath("cam_"+ofToString(index)+".png")+" -m "+model+" -o "+ofToDataPath("chainer_img_"+ofToString(index)+".png")+" --gpu "+(GPU_ENABLED==1?"0":"-1");
     }
     
     bool hasNew() {

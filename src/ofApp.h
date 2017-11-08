@@ -5,15 +5,15 @@
 
 // you may have to change these paths...
 // this is the path to chainer-fast-neuralstyle
-#define NEURAL_STYLE_PATH "/Users/gene/Learn/chainer-fast-neuralstyle"
+#define NEURAL_STYLE_PATH "/home/elian/Documents/repos/chainer-fast-neuralstyle"
 
 // openframeworks overwrites the path so you can't find CUDA.
 // if you have the chainer script working, just change this so it matches what
 // you get if you run "echo $PATH" in a terminal
-#define PATH "/usr/local/bin:/usr/local/sbin:/Developer/NVIDIA/CUDA-7.5/bin:/usr/local/cuda/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+#define PATH "/usr/local/cuda-8.0/bin:/home/elian/torch/install/bin:/home/elian/torch/install/bin:/home/elian/bin:/home/elian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 
 // same thing for "echo $LD_LIBRARY_PATH"
-#define LD_LIBRARY_PATH "/usr/local/cuda/lib"
+#define LD_LIBRARY_PATH "/usr/local/cuda-8.0/lib64/:/home/elian/torch/install/lib:/home/elian/torch/install/lib:"
 
 // if you have CUDA and your paths are correct, set this to 1. otherwise set to 0
 #define GPU_ENABLED 1

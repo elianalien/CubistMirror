@@ -9,10 +9,10 @@ void ofApp::setup(){
     min_lapse = 0.6;
     
     // select style model
-    string styleModel = ofToDataPath("cubist.model");
+    string styleModel = ofToDataPath("hokusai.model");
 
     // set up camera
-    grab.initGrabber(320, 240);
+    grab.initGrabber(408, 304);
 
     // set up style threads
     worker1.setStyleModel(styleModel);
