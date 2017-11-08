@@ -9,7 +9,7 @@ void ofApp::setup(){
     min_lapse = 0.6;
     
     // select style model
-    string styleModel = ofToDataPath("hokusai.model");
+    string styleModel = ofToDataPath("starrynight.model");
 
     // set up camera
     grab.initGrabber(408, 304);
